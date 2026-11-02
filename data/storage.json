@@ -1,0 +1,435 @@
+{
+  "admin": {
+    "id": "d0f9c2af-eefa-42fe-83a9-555478ec1669",
+    "username": "admin",
+    "passwordHash": "a7d696ff69801092e8917514c1c2ee23def80908fd99ae89833d3b2404480ac11a9f79902459547754dbd15e792df1d1ede3267a5d61ea8f637a36d7eafeef71",
+    "salt": "62bb8d4ff8a9482dd2a4975dd310c2b7",
+    "createdAt": "2026-11-01T11:02:07.897Z",
+    "lastLogin": "2026-11-01T18:01:06.537Z"
+  },
+  "sessions": {
+    "29615b869867f1a36f7530f84387706a7043d0f3e24f3236e393e82c55d29cf5": {
+      "username": "admin",
+      "expiresAt": 1794135734623
+    },
+    "d1eb52dea525df9696ac49ed8a72fc8c2d1f82066c196bae66f4ed83a392c0e0": {
+      "username": "admin",
+      "expiresAt": 1794135738624
+    },
+    "c9e7fc619e2c1e5e648bba4e8d8a4b5e121b79a6e7d136cb519cd72a5e0be077": {
+      "username": "admin",
+      "expiresAt": 1794135744359
+    },
+    "1df621e43e6008818295de6f1800a354534870a935645a2cbc4440968c758930": {
+      "username": "admin",
+      "expiresAt": 1794135750110
+    },
+    "c04c9f88b9fd08ed5d45806c2f96644e7908801b07c4dc8fc7944ec798e73813": {
+      "username": "admin",
+      "expiresAt": 1794158943952
+    },
+    "daa81e7fd7ddf0fc3f69bf7574e5a82d9a8813d7427d0bc4d9acab8aeafe2882": {
+      "username": "admin",
+      "expiresAt": 1794159891529
+    },
+    "f1b379eacb0fbd0e66c82e377e76e8cc4b98c93c558fe33518af7102ea80d957": {
+      "username": "admin",
+      "expiresAt": 1794160437510
+    },
+    "6a85cbe8458843ef649f93439976a5ded8be0cad78764bd5229c70f47092d8ba": {
+      "username": "admin",
+      "expiresAt": 1794160616078
+    },
+    "77214a90bb5fd14918b64f88237a8a7cd63614a96aa101875d3ea32e2484fc21": {
+      "username": "admin",
+      "expiresAt": 1794160854861
+    },
+    "84ab67dd6f79eeedd1746e526eddb64769c00ec3f8cbc636b71003b8b1f65816": {
+      "username": "admin",
+      "expiresAt": 1794160866537
+    }
+  },
+  "settings": {
+    "engineStatus": "running",
+    "telegramBotToken": "",
+    "telegramApiId": "",
+    "telegramApiHash": "",
+    "telegramSessionString": "",
+    "removeUrlsText": true,
+    "removeUrlsCaptions": true,
+    "cleanHyperlinksMode": "keep_text",
+    "preserveMediaQuality": true,
+    "forwardEditedMessages": false,
+    "staticMessageText": "📢 مرحبًا بكم في القناة الرسمية\n\nنقدم لكم تغطية فورية وحصرية لأحدث الأخبار والتحليلات الاقتصادية على مدار الساعة.\n\n🌐 للمزيد من المعلومات أو التواصل: https://t.me/example",
+    "staticMessageEnabled": true,
+    "staticMessagePin": true,
+    "staticMessageDestinations": [],
+    "staticMessageAutoOnStart": false,
+    "staticMessageAutoOnNewChannel": true,
+    "pricesMasterEnabled": true,
+    "pricesGoldEnabled": true,
+    "pricesBtcEnabled": true,
+    "pricesIntervalMinutes": 5,
+    "pricesTemplate": "⚡ الذهب XAU/USD: {gold_price}$ | {gold_arrow}\n₿ البيتكوين BTC/USD: {btc_price}$ | {btc_arrow}\nآخر تحديث: {updated_at}",
+    "pricesDestinations": [],
+    "pricesOrder": "above_static",
+    "goldCurrency": "USD",
+    "goldUnit": "أونصة تروي",
+    "btcCurrency": "USD",
+    "decimalsGold": 2,
+    "decimalsBtc": 0
+  },
+  "sourceChannels": [
+    {
+      "id": "src_gold_sample",
+      "name": "قناة أخبار الذهب والعملات (نموذج)",
+      "username": "@GoldNewsArabic",
+      "telegramId": "-1001552233441",
+      "isActive": true,
+      "priority": 1,
+      "targetDestinations": [
+        "dest_vip_sample"
+      ],
+      "lastMessageId": 56066,
+      "lastMessageAt": "2026-11-01T18:01:06.564Z",
+      "status": "connected",
+      "createdAt": "2026-11-01T11:02:07.897Z"
+    },
+    {
+      "id": "src_crypto_sample",
+      "name": "إشارات وتحليلات الكريبتو (نموذج)",
+      "username": "@CryptoDailyArabic",
+      "telegramId": "-1001889922331",
+      "isActive": true,
+      "priority": 2,
+      "targetDestinations": [
+        "dest_vip_sample",
+        "dest_news_sample"
+      ],
+      "lastMessageId": 859,
+      "lastMessageAt": "2026-11-01T10:32:07.897Z",
+      "status": "connected",
+      "createdAt": "2026-11-01T11:02:07.897Z"
+    }
+  ],
+  "destinationChannels": [
+    {
+      "id": "dest_vip_sample",
+      "name": "قناة VIP الرئيسية للمتابعين",
+      "username": "@MZ_Telegram_VIP",
+      "telegramId": "-1002998877665",
+      "isActive": true,
+      "priority": 1,
+      "lastDispatchedAt": "2026-11-01T18:01:06.565Z",
+      "lastStatus": "success",
+      "currentPricesMsgId": 201,
+      "currentStaticMsgId": 105,
+      "createdAt": "2026-11-01T11:02:07.897Z"
+    },
+    {
+      "id": "dest_news_sample",
+      "name": "قناة الأخبار السريعة العامة",
+      "username": "@MZ_News_Channel",
+      "telegramId": "-1002112233445",
+      "isActive": true,
+      "priority": 2,
+      "lastDispatchedAt": "2026-11-01T10:42:07.897Z",
+      "lastStatus": "success",
+      "currentPricesMsgId": 144,
+      "createdAt": "2026-11-01T11:02:07.897Z"
+    }
+  ],
+  "forwardedMessages": [],
+  "latestPrices": {
+    "gold": {
+      "asset": "XAU",
+      "price": 3898.9,
+      "previousPrice": 3898.9,
+      "direction": "neutral",
+      "changePercent": 0,
+      "source": "Yahoo Finance (Gold Front Spot XAU/USD)",
+      "timestamp": "2026-11-01T18:00:50.203Z",
+      "unit": "أونصة تروي"
+    },
+    "btc": {
+      "asset": "BTC",
+      "price": 77980.54,
+      "previousPrice": 78017,
+      "direction": "down",
+      "changePercent": -0.05,
+      "source": "Binance Live (BTC/USDT)",
+      "timestamp": "2026-11-01T18:00:50.457Z",
+      "unit": "دولار"
+    }
+  },
+  "auditLogs": [
+    {
+      "id": "log_1793556066593_fbu4",
+      "level": "warning",
+      "category": "forwarder",
+      "message": "تم مسح كامل سجل الرسائل والمنشورات المنقولة",
+      "timestamp": "2026-11-01T18:01:06.593Z"
+    },
+    {
+      "id": "log_1793556066565_nzvt",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت معالجة الرسالة #56066 من قناة أخبار الذهب والعملات (نموذج)",
+      "details": "تمت التصفية وإزالة 0 رابط، الإرسال إلى 1 وجهة",
+      "timestamp": "2026-11-01T18:01:06.565Z"
+    },
+    {
+      "id": "log_1793556066538_5dwg",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T18:01:06.538Z"
+    },
+    {
+      "id": "log_1793556054939_ymg3",
+      "level": "success",
+      "category": "telegram",
+      "message": "تم إرسال رسالة اختبار بنجاح إلى قناة VIP الرئيسية للمتابعين",
+      "timestamp": "2026-11-01T18:00:54.939Z"
+    },
+    {
+      "id": "log_1793556054862_9pvy",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T18:00:54.862Z"
+    },
+    {
+      "id": "log_1793555816503_fgqi",
+      "level": "warning",
+      "category": "telegram",
+      "message": "تم حذف قناة الواجهة: dest_6c45f651",
+      "timestamp": "2026-11-01T17:56:56.503Z"
+    },
+    {
+      "id": "log_1793555816429_0thu",
+      "level": "info",
+      "category": "telegram",
+      "message": "تمت إضافة قناة واجهة جديدة: قناتي التجريبية (t.me/my_test_channel)",
+      "timestamp": "2026-11-01T17:56:56.429Z"
+    },
+    {
+      "id": "log_1793555816336_ef5b",
+      "level": "warning",
+      "category": "forwarder",
+      "message": "تم حذف قناة المصدر: src_bd3a0a74",
+      "timestamp": "2026-11-01T17:56:56.336Z"
+    },
+    {
+      "id": "log_1793555816246_4wce",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت إضافة قناة مصدر جديدة: قناة أخبار تيليجرام الرسمية (https://t.me/telegram)",
+      "timestamp": "2026-11-01T17:56:56.246Z"
+    },
+    {
+      "id": "log_1793555816078_oshm",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T17:56:56.078Z"
+    },
+    {
+      "id": "log_1793555637695_87wr",
+      "level": "error",
+      "category": "telegram",
+      "message": "فشل إرسال رسالة اختبار إلى قناة VIP الرئيسية للمتابعين",
+      "details": "القناة غير موجودة أو المعرّف غير صحيح",
+      "timestamp": "2026-11-01T17:53:57.695Z"
+    },
+    {
+      "id": "log_1793555637511_l56c",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T17:53:57.511Z"
+    },
+    {
+      "id": "log_1793555091559_kngu",
+      "level": "warning",
+      "category": "forwarder",
+      "message": "تم حذف رسالة/خبر من السجل: fwd_660fd764-8",
+      "timestamp": "2026-11-01T17:44:51.559Z"
+    },
+    {
+      "id": "log_1793555091549_p3ye",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت معالجة الرسالة #771122 من قناة أخبار الذهب والعملات (نموذج)",
+      "details": "تمت التصفية وإزالة 0 رابط، الإرسال إلى 1 وجهة",
+      "timestamp": "2026-11-01T17:44:51.549Z"
+    },
+    {
+      "id": "log_1793555091530_bxhb",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T17:44:51.530Z"
+    },
+    {
+      "id": "log_1793554144445_vakl",
+      "level": "info",
+      "category": "system",
+      "message": "تم نشر الرسالة الثابتة إلى 2 قناة",
+      "timestamp": "2026-11-01T17:29:04.445Z"
+    },
+    {
+      "id": "log_1793554144441_gb5c",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت معالجة الرسالة #887711 من قناة أخبار الذهب والعملات (نموذج)",
+      "details": "تمت التصفية وإزالة 1 رابط، الإرسال إلى 0 وجهة",
+      "timestamp": "2026-11-01T17:29:04.441Z"
+    },
+    {
+      "id": "log_1793554144438_6rjh",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت معالجة الرسالة #887711 من قناة أخبار الذهب والعملات (نموذج)",
+      "details": "تمت التصفية وإزالة 1 رابط، الإرسال إلى 1 وجهة",
+      "timestamp": "2026-11-01T17:29:04.438Z"
+    },
+    {
+      "id": "log_1793554144433_yvu0",
+      "level": "info",
+      "category": "prices",
+      "message": "تم تحديث أسعار الذهب والبيتكوين يدويًا",
+      "details": "تم التحديث في 2 قناة",
+      "timestamp": "2026-11-01T17:29:04.433Z"
+    },
+    {
+      "id": "log_1793554144096_rnrc",
+      "level": "warning",
+      "category": "telegram",
+      "message": "تم حذف قناة الواجهة: dest_71be9d8d",
+      "timestamp": "2026-11-01T17:29:04.096Z"
+    },
+    {
+      "id": "log_1793554144092_nkzu",
+      "level": "error",
+      "category": "telegram",
+      "message": "فشل إرسال رسالة اختبار إلى قناة واجهة تجريبية",
+      "details": "Forbidden: bot is not a member of the channel chat",
+      "timestamp": "2026-11-01T17:29:04.092Z"
+    },
+    {
+      "id": "log_1793554143995_i3f0",
+      "level": "info",
+      "category": "telegram",
+      "message": "تمت إضافة قناة واجهة جديدة: قناة واجهة تجريبية (@TestDestChannel)",
+      "timestamp": "2026-11-01T17:29:03.995Z"
+    },
+    {
+      "id": "log_1793554143991_41pf",
+      "level": "warning",
+      "category": "forwarder",
+      "message": "تم حذف قناة المصدر: src_f53fce07",
+      "timestamp": "2026-11-01T17:29:03.991Z"
+    },
+    {
+      "id": "log_1793554143976_tqrr",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت إضافة قناة مصدر جديدة: قناة تجريبية للاختبار (@TestChannelAutomated)",
+      "timestamp": "2026-11-01T17:29:03.976Z"
+    },
+    {
+      "id": "log_1793554143970_vk27",
+      "level": "info",
+      "category": "system",
+      "message": "تم تشغيل محرك النقل التلقائي",
+      "timestamp": "2026-11-01T17:29:03.970Z"
+    },
+    {
+      "id": "log_1793554143970_oxlf",
+      "level": "info",
+      "category": "system",
+      "message": "تم تحديث إعدادات النظام",
+      "timestamp": "2026-11-01T17:29:03.970Z"
+    },
+    {
+      "id": "log_1793554143965_nmo4",
+      "level": "warning",
+      "category": "system",
+      "message": "تم إيقاف محرك النقل مؤقتًا بواسطة المشرف",
+      "timestamp": "2026-11-01T17:29:03.965Z"
+    },
+    {
+      "id": "log_1793554143965_htef",
+      "level": "info",
+      "category": "system",
+      "message": "تم تحديث إعدادات النظام",
+      "timestamp": "2026-11-01T17:29:03.965Z"
+    },
+    {
+      "id": "log_1793554143953_bw7e",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T17:29:03.953Z"
+    },
+    {
+      "id": "log_1793554143875_bz1y",
+      "level": "warning",
+      "category": "auth",
+      "message": "محاولة تسجيل دخول فاشلة للمستخدم: admin",
+      "timestamp": "2026-11-01T17:29:03.875Z"
+    },
+    {
+      "id": "log_1793530950141_j26n",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت معالجة الرسالة #9901 من قناة أخبار الذهب والعملات (نموذج)",
+      "details": "تمت التصفية وإزالة 1 رابط، الإرسال إلى 0 وجهة",
+      "timestamp": "2026-11-01T11:02:30.141Z"
+    },
+    {
+      "id": "log_1793530950128_co99",
+      "level": "info",
+      "category": "forwarder",
+      "message": "تمت معالجة الرسالة #9901 من قناة أخبار الذهب والعملات (نموذج)",
+      "details": "تمت التصفية وإزالة 1 رابط، الإرسال إلى 1 وجهة",
+      "timestamp": "2026-11-01T11:02:30.128Z"
+    },
+    {
+      "id": "log_1793530950111_bwre",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T11:02:30.111Z"
+    },
+    {
+      "id": "log_1793530944360_nmuu",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T11:02:24.360Z"
+    },
+    {
+      "id": "log_1793530938624_flnr",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T11:02:18.624Z"
+    },
+    {
+      "id": "log_1793530934624_r8k0",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تسجيل الدخول بنجاح للمشرف: admin",
+      "timestamp": "2026-11-01T11:02:14.624Z"
+    },
+    {
+      "id": "log_1793530927897_sn32",
+      "level": "info",
+      "category": "auth",
+      "message": "تم تهيئة حساب المدير الأول بنجاح (اسم المستخدم: admin)",
+      "timestamp": "2026-11-01T11:02:07.897Z"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MZ Telegram Automation — ناقل قنوات تيليجرام الذكي",
+  "description": "نظام آلي متقدم لنقل رسائل وقنوات تيليجرام مع تصفية الروابط، الأسعار المباشرة للذهب والبيتكوين، والرسائل الثابتة ولوحة تحكم عربية كاملة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

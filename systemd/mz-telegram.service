@@ -1,0 +1,18 @@
+[Unit]
+Description=MZ Telegram Automation Daemon (24/7 Continuous Operation)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/mz-telegram-automation
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=5s
+Environment=NODE_ENV=production
+EnvironmentFile=/opt/mz-telegram-automation/.env
+StandardOutput=append:/var/log/mz-telegram.log
+StandardError=append:/var/log/mz-telegram.error.log
+
+[Install]
+WantedBy=multi-user.target
